@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real Estate</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+      <script>
+    function form() {
+      
+        alert("Кролик номер ");
+      
+    }
+  </script>
+</head>
+<body>	
+	<div class="container">
+		<header class="header">			
+				<div class="header-left-list-block">
+						<p>
+							<h4 class="h4">Подбор квартир</h4>
+						</p> 
+						<p>
+							<h4 class="h4">Продажа недвижимости</h4>
+						</p> 
+							
+						<p>
+							<h4 class="h4">Юридическое сопровождение</h4>
+						</p> 
+							
+						<p>
+							<h4 class="h4">Оформление ипотеки</h4>
+						</p> 						
+				</div>
+				<p class="header-telefon"> +7 917 104 35 41</p>					
+		</header>
+	
+		<main class="centre-block" >   
+			<h1 class="h1">Надоело снимать? Пора покупать!</h1>
+			<h2 class="h2">
+				<p>
+					Сопровождение всего цикла сделки
+				</p>
+				<p>
+					от подачи заявки на ипотеку	
+				</p>
+				<p>
+					до получения ключей
+				</p>
+			</h2>
+			<div class="main-button" id="main-button">
+           		 <a href="#" class="main-button-description"  onclick="form()";>Узнать подробнее</a>            
+        	</div>
+        	  <div class="main" id="main">
+			      <h3>Внимание</h3>
+			      <p>Оставьте ваши контактные данные и наш консультант<br/>
+			              свяжется с вами</p>			       
+					<form id="application" action=" application.php" method="POST" name=" application ">
+						<input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
+						<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required/>
+						<input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Введите ваш телефон" required />
+						<button class="applicationButton" type="submit" form="application"> Получить консультацию</button>
+					</form>
+				</div>
+		</main>
+		<footer class="footer">
+			<h2 class="h2">
+				Опытный специалист продаст Вашу квартиру и подберет нужную в оговоренные сроки. Оформим ипотеку. 
+				Работаем даже со "сложными сделками". У нас останетесь довольны.
+			</h2>
+		</footer>
+	</div>
+
+	<script>
+		function form() {
+			// console.log(e);
+		  // e.preventDefault();
+		  document.getElementById('main').style.display = 'block';
+		  document.getElementById('main-button').style.display = 'none';		  
+		  // return false;	  
+		}
+	</script>
+</body>
+</html>
